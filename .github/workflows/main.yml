@@ -1,0 +1,13 @@
+name: action demo
+
+on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: first step
+      env: 
+        FIRST_NAME: hello action
+      run: 
+        echo $FIRST_NAME
